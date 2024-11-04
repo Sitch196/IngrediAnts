@@ -19,7 +19,7 @@ const IngredientInput = ({ ingredients, setIngredients, searchMeals }) => {
   };
 
   return (
-    <div className="flex flex-col items-center space-y-4 mb-6">
+    <div className="flex flex-col items-center justify-center min-h-[50vh] space-y-4 mb-6 bg-[whitesmoke] p-4">
       <p className="text-gray-600 text-center">
         Add ingredients one by one: type and press Enter or comma
       </p>
@@ -46,7 +46,7 @@ const IngredientInput = ({ ingredients, setIngredients, searchMeals }) => {
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Type one ingredient and press Enter"
-          className="flex-grow border border-gray-300 p-2 rounded-md shadow-sm focus:outline-none focus:border-blue-500"
+          className="flex-grow border border-gray-300 bg-white p-2 rounded-md shadow-sm focus:outline-none focus:border-blue-500"
         />
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md font-semibold shadow-md"

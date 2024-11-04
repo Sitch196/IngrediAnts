@@ -2,7 +2,7 @@ import React from "react";
 
 const MealGrid = ({ meals, onMealClick }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+    <div className=" bg-[whitesmoke] mx-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-10">
       {meals.map((meal) => (
         <div
           key={meal.idMeal}
