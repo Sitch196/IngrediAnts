@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 
-const IngredientInput = ({ ingredients, setIngredients, searchMeals }) => {
+const IngredientInput = ({
+  ingredients,
+  setIngredients,
+  searchMeals,
+  mealGridRef,
+}) => {
   const [inputValue, setInputValue] = useState("");
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter" || e.key === ",") {
+      mealGridRef.current.scrollIntoView({ behavior: "smooth" });
       e.preventDefault();
       const newIngredient = inputValue.trim().toLowerCase();
       if (newIngredient && !ingredients.includes(newIngredient)) {

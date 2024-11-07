@@ -3,7 +3,8 @@ import axios from "axios";
 import IngredientInput from "./components/IngredientInput";
 import MealGrid from "./components/MealGrid";
 import MealModal from "./components/MealModal";
-import LandingPage from "./Components/LandingPage";
+import LandingPage from "./components/LandingPage";
+import ErrorModal from "./Components/ErrorModal";
 
 const App = () => {
   const [ingredients, setIngredients] = useState([]);
@@ -74,9 +75,9 @@ const App = () => {
           ingredients={ingredients}
           setIngredients={setIngredients}
           searchMeals={searchMeals}
+          mealGridRef={mealGridRef}
         />
       </div>
-      {error && <div className="text-red-500 text-center mt-4">{error}</div>}
       {loading ? (
         <div className="text-center text-blue-500 text-lg font-semibold">
           Loading...
@@ -89,6 +90,7 @@ const App = () => {
       {selectedMeal && (
         <MealModal meal={selectedMeal} onClose={() => setSelectedMeal(null)} />
       )}
+      {error && <ErrorModal message={error} onClose={() => setError(null)} />}
     </div>
   );
 };
