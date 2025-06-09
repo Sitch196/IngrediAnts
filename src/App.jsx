@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import IngredientInput from "./Components/IngredientInput";
-import MealGrid from "./components/MealGrid";
-import MealModal from "./components/MealModal";
-import LandingPage from "./components/LandingPage";
+import MealGrid from "./Components/MealGrid";
+import MealModal from "./Components/MealModal";
+import LandingPage from "./Components/LandingPage";
 import ErrorModal from "./Components/ErrorModal";
 
 const App = () => {
