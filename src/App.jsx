@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import IngredientInput from "./components/IngredientInput";
+import IngredientInput from "./Components/IngredientInput";
 import MealGrid from "./components/MealGrid";
 import MealModal from "./components/MealModal";
 import LandingPage from "./components/LandingPage";
