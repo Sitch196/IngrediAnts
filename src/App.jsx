@@ -68,7 +68,7 @@ const App = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div>
       <LandingPage onStart={handleStart} />
       <div ref={inputRef}>
         <IngredientInput

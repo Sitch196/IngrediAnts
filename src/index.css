@@ -12,7 +12,7 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(107, 114, 128, 0.5); /* Gray-500 with opacity */
+  background-color: rgba(107, 114, 128, 0.5);
   border-radius: 8px;
 }
 
